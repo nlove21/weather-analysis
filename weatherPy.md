@@ -807,31 +807,6 @@ for data in weatherJson:
 
     continue
 
-for data in weatherJson:
-    try:
-        lat1 = data.get("coord").get("lat")
-        latData.append(lat1)
-        long1 = data.get("coord").get("lon")
-        longData.append(long1)
-        temp1 = data.get("main").get("temp_max")
-        tempMax.append(temp1)
-        city1 = data.get("name")
-        cityData.append(city1)
-        country1 = data.get("sys").get("country")
-        country.append(country1)
-        humi1 = data.get("main").get("humidity")
-        humiData.append(humi1)
-        cld1 = data.get("clouds").get("all")
-        cldData.append(cld1)
-        wind1 = data.get("wind").get("speed")
-        windData.append(wind1)
-        
-
-    except:
-        pass
-
-    continue
-
 weatherDict = {"Latitude": latData, 
                "Longitude":longData, 
                "City":cityData, 
